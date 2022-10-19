@@ -19,7 +19,6 @@ public class BinarySearch {
              * int mid = (start + end) / 2; // might be possible that (start + end) exceeds
              * range of int
              */
-            System.out.println(start + "----" + end);
             int mid = start + (end - start) / 2;
             if (target < arr[mid]) {
                 end = mid - 1;
@@ -28,7 +27,6 @@ public class BinarySearch {
             } else {
                 return mid;
             }
-            System.out.println(start + "--------" + end);
         }
         return -1;
     }
